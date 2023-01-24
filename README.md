@@ -22,9 +22,9 @@ pitää kyseisestä faktasta.
   /facts/web?save=true
 - palauttaa haetun tai tallennetun faktan JSON-muodossa.
 
-**Oman faktan lisääminen tietokantaan**<br>
+**Oman faktan lisääminen tietokantaan**
 
-- `POST` /facts <br>
+- `POST` /facts
 - dataksi JSON `{"text":\<teksi\>,"type":\<tyyppi\>}` esim.
   `{"text":"Dogs are cool","type":"dog"}`
 - palauttaa tallennetun faktan JSON-muodossa
@@ -34,13 +34,13 @@ pitää kyseisestä faktasta.
 - `PUT`/facts
 - palauttaa viestin onnistumisesta JSON-mudossa
 
-**Faktan poistaminen**<br>
+**Faktan poistaminen**
 
 - poista yksittäinen fakta id:llä `DELETE` /facts/{id}
 - poista kaikki faktat `DELETE`/facts?deleteAll=true
-- palauttaa poistetun määrän JSON-muodossa<br>
+- palauttaa poistetun määrän JSON-muodossa
 
-<b>Faktan lataaminen tietokannasta</b><br>
+<b>Faktan lataaminen tietokannasta</b>
 
 - perusmuoto: `GET` /facts?id=\<id\>&asc=\<bool\>&limit=\<kokoluku\>
   - `id` ohittaa muut vaihtoehdot ja palauttaa yhden JSON-olion
