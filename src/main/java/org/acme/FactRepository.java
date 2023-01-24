@@ -39,6 +39,7 @@ public class FactRepository implements PanacheMongoRepository<Fact> {
             return Response.ok(result).build();
         }
         // limit
+        limit = Integer.max(limit, 1);
         var page = Page.ofSize(limit);
         // sort
         var sort = asc ? Sort.ascending("firstSavedOn") : Sort.descending("firstSavedOn");
